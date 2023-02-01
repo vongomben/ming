@@ -1,7 +1,7 @@
-name: MING - MQTT InfluxDB NodeRED Grafana
+name: MINGZ - MQTT InfluxDB NodeRED Grafana Zigbee2mqtt
 type: sw.application
 description: >-
-  Deploys MING Stak (MQTT, InfluxDB, NodeRED and Grafana). An Open-Source LAMP-like stack for the Internet of Things
+  Deploys MINGZ Stack (MQTT, InfluxDB, NodeRED, Grafana Zigbee2mqtt). An Open-Source LAMP-like stack for the Internet of Things
 joinable: false
 assets:
   repository:

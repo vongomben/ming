@@ -1,4 +1,8 @@
-# MING (MQTT, InfluxDB, NodeRED and Grafana)
+# MINGZ - MQTT InfluxDB NodeRED Grafana Zigbee2mqtt
+
+This is a fork from the super istructive original Pous Ming, inwhich I had to add Zigbee2Mqtt. 
+
+
 
 This is an educative project called *MING* based on MQTT, InfluxDB, [balena Node-RED block](https://github.com/balenablocks/balena-node-red), Grafana and WiFi Connect balena blocks. MING is an Open-Source LAMP-like stack for the Internet of Things.
 

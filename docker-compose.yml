@@ -5,6 +5,8 @@ volumes:
   grafana-data:
   influxdb-data:
   influxdb-etc:
+  volume_zigbee2mqtt:
+
 
 services:
 
@@ -84,3 +86,22 @@ services:
     ports:
       - "1883:1883"
     restart: always
+    command: ["/usr/sbin/mosquitto", "-c", "/mosquitto-no-auth.conf"]
+
+  # ------------------------------------------------------------------------------------
+  # Zigbee2mqtt
+  # ------------------------------------------------------------------------------------
+
+  zigbee2mqtt:
+    build: zigbee2mqtt
+    restart: always
+    volumes:
+      - volume_zigbee2mqtt:/app/data
+    ports:
+      # Frontend port
+      - 8888:8888
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    environment:
+      - DATA=/app/data
+      - TZ=Europe/Rome
